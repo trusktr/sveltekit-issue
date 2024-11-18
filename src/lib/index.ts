@@ -7,6 +7,7 @@ function element(name: string) {
 	};
 }
 
-export
 @element('kitchen-sink')
-class KitchenSink extends Element {}
+class KitchenSink /*extends HTMLElement*/ {}
+
+export { KitchenSink };
