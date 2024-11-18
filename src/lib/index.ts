@@ -2,12 +2,11 @@
 
 function element(name: string) {
 	return function (Class: any) {
-		name;
+		console.log(name);
 		return Class;
 	};
 }
 
+export
 @element('kitchen-sink')
 class KitchenSink /*extends HTMLElement*/ {}
-
-export { KitchenSink };
